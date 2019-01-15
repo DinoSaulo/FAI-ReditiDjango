@@ -1,5 +1,6 @@
+
 from django.contrib import admin
-from .models import Subrediti, Thread, Post
+from .models import Subrediti, Thread, Post, Subscription
 
 class SubreditiAdmin(admin.ModelAdmin):
     list_display = ['title', 'slug', 'creator']

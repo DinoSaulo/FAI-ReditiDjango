@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    background-color: red;
+    color: black;
+}
+.links-list li {
+    text-decoration: none;
+}
+.container {
+    margin: 10px;
+}

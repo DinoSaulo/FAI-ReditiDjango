@@ -39,7 +39,7 @@ class Subscription(models.Model):
     subscribed = models.BooleanField(default=False)
 
     class Meta:
-        unique_together = [('subrediti','user')]
+        unique_together = [('user','sub')]
 
     class __str__(self):
         return('{} - {}').format(self.subrediti, self)

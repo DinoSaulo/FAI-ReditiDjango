@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+        {{ form.nom_field_errors }} {% for field in form %}
+        <div>
+            {{ field.label_tag }} {{ field }} {{  }}
+        </div>
+        {{% endfor %}}
+        <button type="submit"> Login </button>
+    </fieldset>
+</form>
+
+{% endblock %}
